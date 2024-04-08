@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import LoginForm from './componentes/login';
-import OpcaoCal from './componentes/cal';
-import AgeScreen from './componentes/idade';
-import InterestScreen from './componentes/juros';
+import LoginForm from './componentes/LoginForm';
+import OpcaoCal from './componentes/OpcaoCal';
+import AgeScreen from './componentes/AgeScreen';
+import InterestScreen from './componentes/InterestScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,17 +15,17 @@ export default function App() {
         <Stack.Screen
           name="Login"
           component={LoginForm}
-          options={{ title: 'Bem-vindo' }}
+          options={{ title: '' }}
         />
         <Stack.Screen
           name="OpcaoCal"
           component={OpcaoCal}
-          options={{ title: 'Escolha uma opção' }}
+          options={{ title: 'Escolha uma opção!!' }}
         />
         <Stack.Screen
           name="AgeScreen"
           component={AgeScreen}
-          options={{ title: 'Idade' }}
+          options={{ title: 'Switch' }}
         />
         <Stack.Screen
           name="InterestScreen"

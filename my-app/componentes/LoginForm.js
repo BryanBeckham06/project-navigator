@@ -22,14 +22,14 @@ export default function LoginForm({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cadastro</Text>
+      <Text style={styles.title}>Formulário de login</Text>
       <View style={styles.form}>
         {/* USERNAME */}
         <MaskInput
           style={styles.textInput}
           onChangeText={(masked, unmasked) => setUsername(masked)}
           value={username}
-          placeholder="Digite seu Nome de Usuario..."
+          placeholder="Digite seu username"
         />
         {/* SENHA */}
         <MaskInput
@@ -37,7 +37,7 @@ export default function LoginForm({ navigation }) {
           style={styles.textInput}
           onChangeText={(masked, unmasked) => setPass(masked)}
           value={pass}
-          placeholder="Digite sua senha..."
+          placeholder="Digite sua senha"
           keyboardType="numeric"
         />
         <TouchableOpacity onPress={validaUsuario} style={styles.loginButton}>
@@ -51,7 +51,7 @@ export default function LoginForm({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1b98e8',
+    backgroundColor: '#1b98e0',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 15,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#403A3E',
+    color: '#111',
   },
   form: {
     width: width,
@@ -70,31 +70,26 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   textInput: {
-    padding: 10,
-    height: 50,
-    width: 300,
-    borderColor: '#DACFF5',
+    padding: 5,
+    height: 40,
+    width: 200,
+    borderColor: '#111',
     borderWidth: 1,
-    borderTopWidth: 1,
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
-    borderBottomLeftRadius: 12,
-    borderBottomRightRadius: 12,
-    borderTopEndRadius: 12,
-    borderTopStartRadius: 12,
-    marginTop: 15,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
   },
   loginButton: {
-    backgroundColor: '#403A3E',
+    backgroundColor: '#111',
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 75,
+    borderRadius: 12,
     borderWidth: 2,
-    borderColor: '#403A3E',
-    marginTop: 15,
+    borderColor: '#d1eea5yarn web',
+    marginTop: 10,
   },
   loginButtonText: {
-    color: 'white',
+    color: '#fff',
     fontSize: 16,
     textAlign: 'center',
   },

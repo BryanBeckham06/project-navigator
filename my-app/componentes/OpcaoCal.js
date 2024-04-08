@@ -19,13 +19,13 @@ export default function OpcaoCal({ navigation }) {
 
     <View style={styles.container}>
 
-      <Text style={styles.title}>Qual cálculo deseja fazer?</Text>
+      <Text style={styles.title}>De acordo com o seu desejo, escolha uma opção abaixo:</Text>
 
       <View style={styles.buttonContainer}>
 
         <TouchableOpacity style={styles.button} onPress={goToAgeScreen}>
 
-          <Text style={styles.buttonText}>Idade</Text>
+          <Text style={styles.buttonText}>Switch</Text>
 
         </TouchableOpacity>
 
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: '#547aa5',
+    backgroundColor: '#1b98e0',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -56,24 +56,24 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
     fontWeight: 'bold',
-    color: '#87CEEB',
+    color: '#111',
   },
   buttonContainer: {
     alignItems: 'center',
     flexDirection: 'row',
   },
   button: {
-    backgroundColor: '#87CEEB',
+    backgroundColor: '#ffff',
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 5,
+    borderRadius: 55,
     borderWidth: 2,
-    borderColor: '#6495ED',
+    borderColor: '#ffff',
     marginTop: 10,
     marginHorizontal: 5,
   },
   buttonText: {
-    color: '#fff',
+    color: 'black',
     fontSize: 18,
   },
   
